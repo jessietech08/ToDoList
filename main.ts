@@ -32,13 +32,17 @@ function getToDoItem():ToDoItem {
 }
 
 function addTask(T:ToDoItem) {
-    // test
-    console.log(T);
-
+    // creates div to display list of tasks
     let taskDiv:HTMLDivElement = document.createElement("div");
-    let taskHeading:HTMLHeadElement = document.createElement("h3");
-    taskHeading.textContent = `${T.task}`;
-    taskDiv.appendChild(taskHeading);
+
+    let taskCheckBox:HTMLInputElement = document.createElement("input");
+    taskCheckBox.type = "checkbox";
+    let taskLabel:HTMLLabelElement = document.createElement("label");
+    taskLabel.textContent = T.task;
+
+
+    taskDiv.appendChild(taskCheckBox);
+    taskDiv.appendChild(taskLabel);
 
     let taskListDisplay = document.querySelector("#list-display");
     taskListDisplay.appendChild(taskDiv);

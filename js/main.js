@@ -18,11 +18,13 @@ function getToDoItem() {
     return addedToDoItem;
 }
 function addTask(T) {
-    console.log(T);
     let taskDiv = document.createElement("div");
-    let taskHeading = document.createElement("h3");
-    taskHeading.textContent = `${T.task}`;
-    taskDiv.appendChild(taskHeading);
+    let taskCheckBox = document.createElement("input");
+    taskCheckBox.type = "checkbox";
+    let taskLabel = document.createElement("label");
+    taskLabel.textContent = T.task;
+    taskDiv.appendChild(taskCheckBox);
+    taskDiv.appendChild(taskLabel);
     let taskListDisplay = document.querySelector("#list-display");
     taskListDisplay.appendChild(taskDiv);
 }
