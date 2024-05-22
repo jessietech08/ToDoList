@@ -19,4 +19,10 @@ function getToDoItem() {
 }
 function addTask(T) {
     console.log(T);
+    let taskDiv = document.createElement("div");
+    let taskHeading = document.createElement("h3");
+    taskHeading.textContent = `${T.task}`;
+    taskDiv.appendChild(taskHeading);
+    let taskListDisplay = document.querySelector("#list-display");
+    taskListDisplay.appendChild(taskDiv);
 }

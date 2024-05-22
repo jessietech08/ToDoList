@@ -34,4 +34,12 @@ function getToDoItem():ToDoItem {
 function addTask(T:ToDoItem) {
     // test
     console.log(T);
+
+    let taskDiv:HTMLDivElement = document.createElement("div");
+    let taskHeading:HTMLHeadElement = document.createElement("h3");
+    taskHeading.textContent = `${T.task}`;
+    taskDiv.appendChild(taskHeading);
+
+    let taskListDisplay = document.querySelector("#list-display");
+    taskListDisplay.appendChild(taskDiv);
 }
