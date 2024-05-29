@@ -34,6 +34,7 @@ function getToDoItem():ToDoItem {
 function addTask(T:ToDoItem) {
     // creates div to display list of tasks
     let taskDiv:HTMLDivElement = document.createElement("div");
+    taskDiv.className = 'todo-item';
 
     let taskCheckBox:HTMLInputElement = document.createElement("input");
     taskCheckBox.type = "checkbox";

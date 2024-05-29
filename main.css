@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(92, 118, 247);
+    text-shadow: 1px 0px 2px rgb(55, 188, 244);
+    font-weight: bold;
+    font-size: 40px;
+    margin: 50px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center; 
+    margin-top: 15px;
+    margin-bottom: 10px; 
+    margin-left: 40%;
+}
+
+.todo-item label {
+    text-shadow: 1px 0px 2px rgb(55, 209, 244);
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(44, 78, 249);
+    margin-right: 10px;
+}
+
+label {
+    text-shadow: 1px 0px 2px rgb(55, 209, 244);
+    font-weight: bold;
+    font-size: 15px;
+    color:  rgb(92, 118, 247);
+    margin-right: 10px;
+}
+
+button {
+    color: rgb(19, 102, 255);
+    box-shadow: 1px 0px 2px rgb(55, 188, 244);
+    font-weight: bold;
+    background-color: rgb(74, 179, 249);
+    margin: 20px;
+    font-size: 15px;
+    text-shadow: 1px 0px 2px rgb(92, 118, 247);
+}
+
+input {
+    box-shadow: 1px 0px 2px rgb(55, 188, 244);
+    font-weight: bold;
+    background-color: rgb(243, 253, 255);
+    margin-right: 10px;
+}
+
+#list-display {
+    align-items: center; 
+}

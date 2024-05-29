@@ -19,6 +19,7 @@ function getToDoItem() {
 }
 function addTask(T) {
     let taskDiv = document.createElement("div");
+    taskDiv.className = 'todo-item';
     let taskCheckBox = document.createElement("input");
     taskCheckBox.type = "checkbox";
     let taskLabel = document.createElement("label");
