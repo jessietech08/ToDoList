@@ -12,7 +12,11 @@ function processToDoItem() {
 }
 function getToDoItem() {
     let taskTextBox = document.querySelector("#task");
-    let task = taskTextBox.value;
+    let task = taskTextBox.value.trim();
+    if (task == "") {
+        alert("Please enter a task");
+        return null;
+    }
     let addedToDoItem = new ToDoItem();
     addedToDoItem.task = task;
     return addedToDoItem;

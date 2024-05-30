@@ -19,10 +19,15 @@ function processToDoItem() {
     }
 }
 
-function getToDoItem():ToDoItem {
+function getToDoItem():ToDoItem | null {
     // get task entered
     let taskTextBox = document.querySelector("#task") as HTMLInputElement;
-    let task:string = taskTextBox.value;
+    let task:string = taskTextBox.value.trim();
+
+    if (task == "") {
+        alert("Please enter a task");
+        return null;
+    }
 
     // create ToDoItem object
     let addedToDoItem = new ToDoItem();
